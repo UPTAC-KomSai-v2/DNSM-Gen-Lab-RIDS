@@ -7,7 +7,7 @@ This README provides instructions on how to set up and run the GEN-Lab-RIDS Lara
 ## Prerequisites
 
 - Ensure that [Composer](https://getcomposer.org/Composer-Setup.exe) is installed on your system.
-- Install XAMPP (apache, mysql) for easier setup of database. 
+- Install [XAMPP](https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.0.30/xampp-windows-x64-8.0.30-0-VS16-installer.exe) (apache, mysql) for easier setup of database. 
 
 ---
 
@@ -39,7 +39,7 @@ Run the following command to install the necessary PHP dependencies:
 composer install
 ```
 
-## Additional Setup 
+## Additional Setup for User Authentication (skip this if not developing for the user authentication front end)
 
 1. Install and build frontend assets with npm. 
 
@@ -102,8 +102,10 @@ php artisan key:generate
     ```
 
 ### Step 7: Start the Development Server
-Start the application server by running: 
+1. Start the application server by running: 
 
 ```bash
 php artisan serve
 ```
+
+2. Run the App [URL](http://127.0.0.1:8000). 
