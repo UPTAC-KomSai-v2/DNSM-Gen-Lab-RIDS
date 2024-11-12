@@ -72,7 +72,7 @@ composer install
     DB_USERNAME=root
     DB_PASSWORD=
     ```
-3. Create a new database following named `rids` using [PHPmyadmin](http://localhost/phpmyadmin/)
+3. Create a new database named as `rids` using [PHPmyadmin](http://localhost/phpmyadmin/)
 
 ### Step 5: Generate Application Key
 
