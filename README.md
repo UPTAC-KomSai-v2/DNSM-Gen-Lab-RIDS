@@ -1,39 +1,98 @@
 # DNSM-Gen-Lab-RIDS
 
-To run a Laravel project downloaded from GitHub, follow these steps:
+This README provides instructions on how to set up and run the GEN-Lab-RIDS Laravel project.
 
-Clone the Repository:
+---
 
-Open your terminal or command prompt.
-Navigate to the directory where you want to store the project.
-Execute: git clone <repository_url>
-Replace <repository_url> with the URL of the GitHub repository.
-Navigate to the Project Directory:
+## Prerequisites
 
-Use: cd <project_directory>
-Replace <project_directory> with the name of the cloned repository.
-Install Composer Dependencies:
+- Ensure that [Composer](https://getcomposer.org/Composer-Setup.exe) is installed on your system.
+- Install XAMPP (apache, mysql) for easier setup of database. 
 
-Ensure Composer is installed on your system.
-Run: composer install
-This command installs all necessary PHP dependencies.
-Set Up Environment Configuration:
+---
 
-Duplicate the .env.example file and rename it to .env.
-Configure the .env file with your environment settings, such as database credentials.
-Generate Application Key:
+## Installation Steps
 
-Execute: php artisan key:generate
-This command sets the APP_KEY in your .env file, ensuring application security.
-Run Database Migrations:
+### Step 1: Clone the Repository
 
-Ensure your database is set up and the credentials in .env are correct.
-Execute: php artisan migrate
-This command creates the necessary database tables.
-Start the Development Server:
+1. Open your terminal or command prompt.
+2. Navigate to the directory where you want to store the project.
+3. Clone the repository using the following command:
 
-Run: php artisan serve
-The application will be accessible at http://localhost:8000.
-For a visual guide, you can watch the following video:
+    ```` ```bash ````
+    git clone <repository_url>
+    ```` ``` ````
 
-https://www.youtube.com/watch?v=9qaiY3ycpwY
+### Step 2: Navigate to the Project Directory
+
+Move into the project directory by running:
+
+```` ```bash ````
+cd <project_directory>
+```` ``` ````
+
+### Step 3: Install Composer Dependencies
+
+Run the following command to install the necessary PHP dependencies:
+```` ```bash````
+composer install
+```` ``` ````
+
+## Additional Setup 
+
+1. Install and build frontend assets with npm. 
+```` ```bash````
+npm install
+```` ``` ````
+2. Install `Laravel Breeze` for Laravel authentication starter kit.
+```` ```bash````
+php artisan breeze:install
+```` ``` ````
+3. Select the following options for installing `Laravel Breeze`: blade, dark mode, PHPUnit.
+4. Command for frontend development: compiles and bundles the frontend assets for development. 
+```` ```bash````
+npm run dev
+```` ``` ````
+
+### Step 4: Set Up Environment Configuration
+
+1. Duplicate the `.env.example` file by running
+    ```` ```bash````
+    cp .env.example .env
+    ```` ``` ````
+2. Open the `.env` file and update it with your environment settings, such as database credentials.
+    ```.env
+    DB_DATABASE=rids
+    DB_USERNAME=root
+    DB_PASSWORD=
+    ```
+3. Create a new database following named `rids` using [PHPmyadmin](http://localhost/phpmyadmin/)
+
+### Step 5: Generate Application Key
+
+Generate the application key for security by running:
+```` ```bash````
+php artisan key:generate
+```` ``` ````
+
+### Step 6: Run Database Migrations
+
+1. Ensure that your database is set up and that the credentials in the .env file are correct.
+2. Run the migrations to create the necessary database tables:
+    ```` ```bash````
+    php artisan migrate
+    ```` ``` ````
+3. Run the following command to link the public folder with the storage folder:
+    ```` ```bash````
+    php artisan storage:link
+    ```` ``` ````
+4. If the migrations weren't properly executed run the following command to rerun migrations:
+    ```` ```bash````
+    php artisan migrate:fresh --seed
+    ```` ``` ````
+
+### Step 7: Start the Development Server
+Start the application server by running: 
+```` ```bash````
+php artisan serve
+```` ``` ````
