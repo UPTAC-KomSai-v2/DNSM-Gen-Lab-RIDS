@@ -8,11 +8,6 @@
                                     Welcome to<br />
                                     UP RIDS
                                 </h1>
-                                <p>Reservation, Inventory, and Disposal System</p>
-                                <form class="form-subcriber d-flex">
-                                    <input type="email" placeholder="Your emaill address" />
-                                    <button class="btn" type="submit">Subscribe</button>
-                                </form>
                             </div>
                         </div>
                         <div class="single-hero-slider single-animation-wrap" style="background-image: url({{asset('frontend/assets/imgs/slider/2.png')}})">
@@ -21,11 +16,6 @@
                                     Borrow Equipments<br />
                                     you need
                                 </h1>
-                                <p>Save up to 50% off on your first order</p>
-                                <form class="form-subcriber d-flex">
-                                    <input type="email" placeholder="Your email address" />
-                                    <button class="btn" type="submit">Subscribe</button>
-                                </form>
                             </div>
                         </div>
                     </div>

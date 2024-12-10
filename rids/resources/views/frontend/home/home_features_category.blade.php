@@ -11,30 +11,30 @@
                     <div class="carausel-10-columns" id="carausel-10-columns">
                         <div class="card-2 bg-9 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="{{asset('frontend/assets/imgs/shop/lab_eq.png')}}" alt="" /></a>
+                                <a href="{{route('equipments')}}"><img src="{{asset('frontend/assets/imgs/shop/lab_eq.png')}}" alt="" /></a>
                             </figure>
-                            <h6><a href="shop-grid-right.html">Lab Equipments</a></h6>
+                            <h6><a href="{{route('equipments')}}">Lab Equipments</a></h6>
                             <span>26 items</span>
                         </div>
                         <div class="card-2 bg-10 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="{{asset('frontend/assets/imgs/shop/lab_mat.png')}}" alt="" /></a>
+                                <a href="{{route('equipments')}}"><img src="{{asset('frontend/assets/imgs/shop/lab_mat.png')}}" alt="" /></a>
                             </figure>
-                            <h6><a href="shop-grid-right.html">Lab Materials</a></h6>
+                            <h6><a href="{{route('equipments')}}">Lab Materials</a></h6>
                             <span>28 items</span>
                         </div>
                         <div class="card-2 bg-11 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="{{asset('frontend/assets/imgs/shop/lab_room.png')}}" alt="" /></a>
+                                <a href="{{route('equipments')}}"><img src="{{asset('frontend/assets/imgs/shop/lab_room.png')}}" alt="" /></a>
                             </figure>
-                            <h6><a href="shop-grid-right.html">Laboratory Rooms</a></h6>
+                            <h6><a href="{{route('equipments')}}">Laboratory Rooms</a></h6>
                             <span>14 items</span>
                         </div>
                         <div class="card-2 bg-12 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="{{asset('frontend/assets/imgs/shop/chem.png')}}" alt="" /></a>
+                                <a href="{{route('equipments')}}"><img src="{{asset('frontend/assets/imgs/shop/chem.png')}}" alt="" /></a>
                             </figure>
-                            <h6><a href="shop-grid-right.html">Chemicals</a></h6>
+                            <h6><a href="{{route('equipments')}}">Chemicals</a></h6>
                             <span>54 items</span>
                         </div>
                         <!-- <div class="card-2 bg-13 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
