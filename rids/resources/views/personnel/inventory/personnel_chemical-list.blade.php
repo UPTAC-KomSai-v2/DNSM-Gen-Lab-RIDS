@@ -349,9 +349,112 @@
 		</header>
 		<!--end header -->
 		<!--start page wrapper -->
-		<div class="page-wrapper">
-            @yield('admin')
-			@include('personnel.static.index')
+        <div class="page-wrapper" style="padding: 12px;">
+        <h6 class="mb-0 text-uppercase">Inventory of Chemicals</h6>
+				<hr/>
+				<div class="card">
+					<div class="card-body">
+						<div class="table-responsive">
+							<table id="example2" class="table table-striped table-bordered">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Quantity</th>
+                                        <th>Price</th>
+										<th>Purity</th>
+                                        <th>Availability Status</th>
+                                        <th>Expiration Date</th>
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Hydrochloric acid</td>
+										<td>20</td>
+                                        <td>30.0</td>
+                                        <td>30.0</td>
+										<td><div class="badge rounded-pill bg-light-success text-success">Available</div></td>
+                                        <td>12/12/12</td>
+										<td>
+                                        <button type="button" class="btn btn-secondary btn-sm px-1 radius-5 justify-content-center align-items-center"><i class='bx bx-show-alt' ></i>
+										</button>
+                                            <button type="button" class="btn btn-primary btn-sm px-1 radius-5">Edit</button>
+                                            <button type="button" class="btn btn-danger btn-sm px-1 radius-5">Delete</button>
+                                        </td>
+									</tr>
+									<tr>
+										<td>Sodium hydroxide</td>
+										<td>20</td>
+                                        <td>30.0</td>
+                                        <td>30.0</td>
+										<td><div class="badge rounded-pill bg-light-success text-success">Available</div></td>
+                                        <td>12/12/12</td>
+										<td>
+                                        <button type="button" class="btn btn-secondary btn-sm px-1 radius-5 justify-content-center align-items-center"><i class='bx bx-show-alt' ></i>
+										</button>
+                                            <button type="button" class="btn btn-primary btn-sm px-1 radius-5">Edit</button>
+                                            <button type="button" class="btn btn-danger btn-sm px-1 radius-5">Delete</button>
+                                        </td>
+									</tr>
+									<tr>
+										<td>Sodium chloride</td>
+										<td>20</td>
+                                        <td>30.0</td>
+                                        <td>30.0</td>
+										<td><div class="badge rounded-pill bg-light-success text-success">Available</div></td>
+                                        <td>12/12/12</td>
+										<td>
+                                        <button type="button" class="btn btn-secondary btn-sm px-1 radius-5 justify-content-center align-items-center"><i class='bx bx-show-alt' ></i>
+										</button>
+                                            <button type="button" class="btn btn-primary btn-sm px-1 radius-5">Edit</button>
+                                            <button type="button" class="btn btn-danger btn-sm px-1 radius-5">Delete</button>
+                                        </td>
+									</tr>
+									<tr>
+										<td>Phenolphthalein</td>
+										<td>20</td>
+                                        <td>30.0</td>
+                                        <td>30.0</td>
+										<td><div class="badge rounded-pill bg-light-success text-success">Available</div></td>
+                                        <td>12/12/12</td>
+										<td>
+                                        <button type="button" class="btn btn-secondary btn-sm px-1 radius-5 justify-content-center align-items-center"><i class='bx bx-show-alt' ></i>
+										</button>
+                                            <button type="button" class="btn btn-primary btn-sm px-1 radius-5">Edit</button>
+                                            <button type="button" class="btn btn-danger btn-sm px-1 radius-5">Delete</button>
+                                        </td>
+									</tr>
+									<tr>
+										<td>Hydrogen peroxide</td>
+										<td>20</td>
+                                        <td>30.0</td>
+                                        <td>30.0</td>
+										<td><div class="badge rounded-pill bg-light-success text-success">Available</div></td>
+                                        <td>12/12/12</td>
+										<td>
+                                        <button type="button" class="btn btn-secondary btn-sm px-1 radius-5 justify-content-center align-items-center"><i class='bx bx-show-alt' ></i>
+										</button>
+                                            <button type="button" class="btn btn-primary btn-sm px-1 radius-5">Edit</button>
+                                            <button type="button" class="btn btn-danger btn-sm px-1 radius-5">Delete</button>
+                                        </td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+                                        <th>Name</th>
+										<th>Quantity</th>
+                                        <th>Price</th>
+										<th>Purity</th>
+                                        <th>Availability Status</th>
+                                        <th>Expiration Date</th>
+										<th>Action</th>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!--end page wrapper -->
 		<!--start overlay-->
@@ -484,6 +587,7 @@
         <script src="{{ asset('adminbackend/assets/js/index.js') }}"></script>
     <!--app JS-->
     <script src="{{ asset('adminbackend/assets/js/app.js') }}"></script>
+    
 </body>
 
 </html>

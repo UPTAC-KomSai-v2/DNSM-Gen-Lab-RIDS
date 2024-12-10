@@ -349,9 +349,92 @@
 		</header>
 		<!--end header -->
 		<!--start page wrapper -->
-		<div class="page-wrapper">
-            @yield('admin')
-			@include('personnel.static.index')
+        <div class="page-wrapper" style="padding: 12px;">
+        <h6 class="mb-0 text-uppercase">Inventory of Materials</h6>
+				<hr/>
+				<div class="card">
+					<div class="card-body">
+						<div class="table-responsive">
+							<table id="example2" class="table table-striped table-bordered">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Quantity</th>
+										<th>Availability Status</th>
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Erlenmeyer Flask</td>
+										<td>10</td>
+										<td><div class="badge rounded-pill bg-light-success text-success">Available</div></td>
+										<td>
+                                        <button type="button" class="btn btn-secondary btn-sm px-1 radius-5 justify-content-center align-items-center"><i class='bx bx-show-alt' ></i>
+										</button>
+                                            <button type="button" class="btn btn-primary btn-sm px-1 radius-5">Edit</button>
+                                            <button type="button" class="btn btn-danger btn-sm px-1 radius-5">Delete</button>
+                                        </td>
+
+									</tr>
+									<tr>
+										<td>Graduated Cylinder</td>
+										<td>10</td>
+										<td><div class="badge rounded-pill bg-light-danger text-danger">Not available</div></td>
+										<td>
+                                        <button type="button" class="btn btn-secondary btn-sm px-1 radius-5 justify-content-center align-items-center"><i class='bx bx-show-alt' ></i>
+										</button>
+                                            <button type="button" class="btn btn-primary btn-sm px-1 radius-5">Edit</button>
+                                            <button type="button" class="btn btn-danger btn-sm px-1 radius-5">Delete</button>
+                                        </td>
+									</tr>
+									<tr>
+										<td>Funnel</td>
+										<td>20</td>
+										<td><div class="badge rounded-pill bg-light-danger text-danger">Not available</div></td>
+										<td>
+                                        <button type="button" class="btn btn-secondary btn-sm px-1 radius-5 justify-content-center align-items-center"><i class='bx bx-show-alt' ></i>
+										</button>
+                                            <button type="button" class="btn btn-primary btn-sm px-1 radius-5">Edit</button>
+                                            <button type="button" class="btn btn-danger btn-sm px-1 radius-5">Delete</button>
+                                        </td>
+									</tr>
+									<tr>
+										<td>Thermometer</td>
+										<td>15</td>
+										<td><div class="badge rounded-pill bg-light-success text-success">Available</div></td>
+										<td>
+                                        <button type="button" class="btn btn-secondary btn-sm px-1 radius-5 justify-content-center align-items-center"><i class='bx bx-show-alt' ></i>
+										</button>
+                                            <button type="button" class="btn btn-primary btn-sm px-1 radius-5">Edit</button>
+                                            <button type="button" class="btn btn-danger btn-sm px-1 radius-5">Delete</button>
+                                        </td>
+									</tr>
+									<tr>
+										<td>Sample Container</td>
+										<td>30</td>
+										<td><div class="badge rounded-pill bg-light-success text-success">Available</div></td>
+										<td>
+                                        <button type="button" class="btn btn-secondary btn-sm px-1 radius-5 justify-content-center align-items-center"><i class='bx bx-show-alt' ></i>
+										</button>
+                                            <button type="button" class="btn btn-primary btn-sm px-1 radius-5">Edit</button>
+                                            <button type="button" class="btn btn-danger btn-sm px-1 radius-5">Delete</button>
+                                        </td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+                                        <th>Name</th>
+										<th>Quantity</th>
+										<th>Availability Status</th>
+										<th>Action</th>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!--end page wrapper -->
 		<!--start overlay-->
@@ -484,6 +567,7 @@
         <script src="{{ asset('adminbackend/assets/js/index.js') }}"></script>
     <!--app JS-->
     <script src="{{ asset('adminbackend/assets/js/app.js') }}"></script>
+    
 </body>
 
 </html>
