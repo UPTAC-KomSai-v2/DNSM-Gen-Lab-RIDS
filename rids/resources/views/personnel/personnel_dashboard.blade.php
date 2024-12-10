@@ -29,81 +29,7 @@
 <body>
 	<!--wrapper-->
 	<div class="wrapper">
-		<!--sidebar wrapper -->
-		<div class="sidebar-wrapper" data-simplebar="true">
-			<div class="sidebar-header">
-				<div>
-					<img src="{{asset('adminbackend/assets/images/logo.png')}}" style="width:90px;" alt="logo icon">
-				</div>
-				<div>
-					<h4 class="logo-text"></h4>
-				</div>
-				<div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
-				</div>
-			</div>
-			<!--navigation-->
-			<ul class="metismenu" id="menu">
-				<li>
-					<a href="{{ route('personnel.dashboard') }}">
-						<div class="parent-icon"><i class='bx bxs-dashboard'></i></i>
-						</div>
-						<div class="menu-title">Dashboard</div>
-					</a>
-				</li>
-
-				<li class="menu-label">Items & Facilities</li>
-				<li>
-					<a href="{{ route('personnel.inventory.material-list') }}"> 
-						<div class="parent-icon"><i class='bx bx-package'></i>
-						</div>
-						<div class="menu-title">Materials</div>
-					</a>
-				</li>
-
-                <li>
-					<a href="{{ route('personnel.inventory.chemical-list') }}">
-						<div class="parent-icon"><i class='bx bxs-radiation'></i>
-						</div>
-						<div class="menu-title">Chemicals</div>
-					</a>
-				</li>
-
-                <li>
-					<a href="{{ route('personnel.inventory.equipment-list') }}">
-						<div class="parent-icon"><i class='bx bx-wrench'></i>
-						</div>
-						<div class="menu-title">Equipment</div>
-					</a>
-				</li>
-
-                <li>
-					<a href="{{ route('personnel.inventory.facility-list') }}">
-						<div class="parent-icon"><i class='bx bxs-school'></i>
-						</div>
-						<div class="menu-title">Facilities</div>
-					</a>
-				</li>
-
-				<li class="menu-label">Requests & Reservations</li>
-
-				<li>
-					<a href="{{ route('personnel.reservation.reservation-request-list') }}">
-						<div class="parent-icon"><i class='bx bx-envelope'></i></i>
-						</div>
-						<div class="menu-title">Requests</div>
-					</a>
-				</li>
-
-                <li>
-					<a href="{{ route('personnel.reservation.reservation-schedule-list') }}">
-						<div class="parent-icon"><i class='bx bx-calendar-check' ></i></i>
-						</div>
-						<div class="menu-title">Schedule</div>
-					</a>
-				</li>
-			<!--end navigation-->
-		</div>
-		<!--end sidebar wrapper -->
+		@include('personnel.personnel_sidebar')
 		<!--start header -->
 		<header>
 			<div class="topbar d-flex align-items-center">
@@ -122,44 +48,7 @@
 								<a class="nav-link" href="#">	<i class='bx bx-search'></i>
 								</a>
 							</li>
-							<li class="nav-item dropdown dropdown-large">
-								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">	<i class='bx bx-category'></i>
-								</a>
-								<div class="dropdown-menu dropdown-menu-end">
-									<div class="row row-cols-3 g-3 p-3">
-										<div class="col text-center">
-											<div class="app-box mx-auto bg-gradient-cosmic text-white"><i class='bx bx-group'></i>
-											</div>
-											<div class="app-title">Teams</div>
-										</div>
-										<div class="col text-center">
-											<div class="app-box mx-auto bg-gradient-burning text-white"><i class='bx bx-atom'></i>
-											</div>
-											<div class="app-title">Projects</div>
-										</div>
-										<div class="col text-center">
-											<div class="app-box mx-auto bg-gradient-lush text-white"><i class='bx bx-shield'></i>
-											</div>
-											<div class="app-title">Tasks</div>
-										</div>
-										<div class="col text-center">
-											<div class="app-box mx-auto bg-gradient-kyoto text-dark"><i class='bx bx-notification'></i>
-											</div>
-											<div class="app-title">Feeds</div>
-										</div>
-										<div class="col text-center">
-											<div class="app-box mx-auto bg-gradient-blues text-dark"><i class='bx bx-file'></i>
-											</div>
-											<div class="app-title">Files</div>
-										</div>
-										<div class="col text-center">
-											<div class="app-box mx-auto bg-gradient-moonlit text-white"><i class='bx bx-filter-alt'></i>
-											</div>
-											<div class="app-title">Alerts</div>
-										</div>
-									</div>
-								</div>
-							</li>
+							
 							<li class="nav-item dropdown dropdown-large">
 								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
 									<i class='bx bx-bell'></i>
@@ -462,6 +351,7 @@
 		<!--start page wrapper -->
 		<div class="page-wrapper">
             @yield('admin')
+			@include('personnel.static.index')
 		</div>
 		<!--end page wrapper -->
 		<!--start overlay-->
@@ -469,9 +359,9 @@
 		<!--end overlay-->
 		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
 		<!--End Back To Top Button-->
-		<footer class="page-footer">
+		<!-- <footer class="page-footer">
 			<p class="mb-0">Copyright © 2021. All right reserved.</p>
-		</footer>
+		</footer> -->
 	</div>
 	<!--end wrapper-->
 	<!--start switcher-->
